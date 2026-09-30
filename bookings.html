@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings | Siga Culinary</title>
+    <link href="mycssfile.css" rel="stylesheet" type="text/css"/>
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+        <p>
+            <a href="index.html" class="logo">
+                <img src="./images/logo.jpeg" alt="Siga Culinary Logo" height="400" width="400" center>
+            </a>
+          
+        </nav>
+    </header>
+    
+    <section class="page-hero booking-hero">
+        <div class="page-hero-content">
+            <p class="section-tag">
+                RESERVE YOUR EXPERIENCE
+            </p>
+            <h1>
+                Book Your Table
+            </h1>
+            <p>
+                Reserve your table at Siga Culinary and enjoy a unique
+                Mexi-Kasi dining experience filled with bold flavours,
+                creativity and township culture.
+            </p>
+            <a href="#booking-form" class="primary-btn">
+                Make a Booking
+            </a>
+        </div>
+    </section>
+   
+    <section class="booking-intro">
+        <div class="section-heading">
+            <p class="section-tag">
+                YOUR TABLE IS WAITING
+            </p>
+            <h2>
+                Plan Your Siga Culinary Experience
+            </h2>
+            <p>
+                Whether you are planning a casual lunch, dinner with
+                friends, a birthday celebration or a special occasion,
+                Siga Culinary is ready to welcome you.
+            </p>
+            <p>
+                Our booking system helps us prepare for your visit and
+                provide you with the best possible dining experience.
+                Please complete the form below and provide as much
+                information as possible.
+            </p>
+        </div>
+    </section>
+   
+    <section class="booking-section" id="booking-form">
+        <div class="booking-container">
+            <div class="booking-details">
+                <p class="section-tag">
+                    MAKE A RESERVATION
+                </p>
+                <h2>
+                    Let's Save You A Seat
+                </h2>
+                <p>
+                    Complete the booking form with your details and
+                    preferred reservation information. Once your
+                    booking request has been received, the Siga Culinary
+                    team can contact you to confirm availability.
+                </p>
+                
+                <div class="booking-benefit">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <div>
+                        <h3>
+                            Easy Reservations
+                        </h3>
+                        <p>
+                            Select your preferred date, time and number
+                            of guests.
+                        </p>
+                    </div>
+                </div>
+                <div class="booking-benefit">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <h3>
+                            Groups Welcome
+                        </h3>
+                        <p>
+                            Planning a group outing? Let us know the
+                            number of guests so we can assist you.
+                        </p>
+                    </div>
+                </div>
+                <div class="booking-benefit">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <div>
+                        <h3>
+                            Special Occasions
+                        </h3>
+                        <p>
+                            Celebrate birthdays, anniversaries,
+                            graduations and other memorable moments.
+                        </p>
+                    </div>
+                </div>
+                <div class="booking-benefit">
+                    <i class="fa-solid fa-utensils"></i>
+                    <div>
+                        <h3>
+                            Mexi-Kasi Experience
+                        </h3>
+                        <p>
+                            Enjoy Siga Culinary's unique combination
+                            of Mexican-inspired flavours and kasi food
+                            culture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="booking-form-box">
+                <h2>
+                    Reservation Details
+                </h2>
+                <p class="form-intro">
+                    Fields marked with * are required.
+                </p>
+                <form id="bookingForm">
+                   
+                    <div class="form-group">
+                        <label for="name">
+                            Full Name *
+                        </label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required>
+                    </div>
+                  
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address *
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">
+                                Phone Number *
+                            </label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+27 00 000 0000"
+                                required>
+                        </div>
+                    </div>
+                   
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">
+                                Preferred Date *
+                            </label>
+                            <input
+                                type="date"
+                                id="date"
+                                name="date"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">
+                                Preferred Time *
+                            </label>
+                            <select
+                                id="time"
+                                name="time"
+                                required>
+                                <option value="">
+                                    Select a time
+                                </option>
+                                <option>10:00</option>
+                                <option>11:00</option>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                                <option>20:00</option>
+                            </select>
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="guests">
+                            Number of Guests *
+                        </label>
+                        <select
+                            id="guests"
+                            name="guests"
+                            required>
+                            <option value="">
+                                Select number of guests
+                            </option>
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5 Guests</option>
+                            <option>6 Guests</option>
+                            <option>7 - 10 Guests</option>
+                            <option>11 - 20 Guests</option>
+                            <option>More than 20 Guests</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="occasion">
+                            Are You Celebrating Something?
+                        </label>
+                        <select
+                            id="occasion"
+                            name="occasion">
+                            <option value="">
+                                Select an option
+                            </option>
+                            <option>Birthday</option>
+                            <option>Anniversary</option>
+                            <option>Graduation</option>
+                            <option>Family Celebration</option>
+                            <option>Corporate Event</option>
+                            <option>Friends Gathering</option>
+                            <option>Other</option>
+                            <option>No Special Occasion</option>
+                        </select>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="dietary">
+                            Dietary Requirements or Allergies
+                        </label>
+                        <textarea
+                            id="dietary"
+                            name="dietary"
+                            rows="3"
+                            placeholder="Please let us know about any allergies or dietary requirements"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="requests">
+                            Special Requests
+                        </label>
+                        <textarea
+                            id="requests"
+                            name="requests"
+                            rows="4"
+                            placeholder="Tell us how we can make your experience special"></textarea>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required>
+                        <label for="terms">
+                            I understand that submitting this form is
+                            a booking request and my reservation is only
+                            confirmed once Siga Culinary confirms it.
+                        </label>
+                    </div>
+                    
+                    <button
+                        type="submit"
+                        class="booking-submit">
+                        Submit Booking Request
+                    </button>
+                  
+                    <div
+                        id="bookingMessage"
+                        class="booking-message">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+   
+    <section class="booking-steps">
+        <div class="section-heading">
+            <p class="section-tag">
+                SIMPLE & EASY
+            </p>
+            <h2>
+                How Booking Works
+            </h2>
+            <p>
+                Follow these simple steps to request your table.
+            </p>
+        </div>
+        <div class="steps-container">
+            <div class="step-card">
+                <span class="step-number">
+                    01
+                </span>
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h3>
+                    Complete The Form
+                </h3>
+                <p>
+                    Enter your contact details and preferred booking
+                    information.
+                </p>
+            </div>
+            <div class="step-card">
+                <span class="step-number">
+                    02
+                </span>
+                <i class="fa-solid fa-calendar-check"></i>
+                <h3>
+                    We Check Availability
+                </h3>
+                <p>
+                    Your preferred date and time are reviewed based
+                    on table availability.
+                </p>
+            </div>
+            <div class="step-card">
+                <span class="step-number">
+                    03
+                </span>
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <h3>
+                    Booking Confirmation
+                </h3>
+                <p>
+                    You receive confirmation once your reservation
+                    has been approved.
+                </p>
+            </div>
+            <div class="step-card">
+                <span class="step-number">
+                    04
+                </span>
+                <i class="fa-solid fa-utensils"></i>
+                <h3>
+                    Enjoy Your Experience
+                </h3>
+                <p>
+                    Arrive at Siga Culinary and enjoy the Mexi-Kasi
+                    food experience.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="group-bookings">
+        <div class="group-content">
+            <p class="section-tag">
+                BIGGER CELEBRATIONS
+            </p>
+            <h2>
+                Planning A Group Event?
+            </h2>
+            <p>
+                Siga Culinary can help you plan a memorable group
+                dining experience. Whether you are organising a
+                birthday, family celebration, graduation, corporate
+                event or gathering with friends, we can help make
+                your occasion special.
+            </p>
+            <p>
+                For larger groups, we recommend contacting us in
+                advance so that arrangements can be discussed and
+                availability can be confirmed.
+            </p>
+            <a href="#booking-form" class="primary-btn">
+                Enquire About Group Bookings
+            </a>
+        </div>
+        <div class="group-image">
+            <img src="./images/outside view.jpeg"
+                alt="Group dining at Siga Culinary" height="200" width="200">
+        </div>
+    </section>
+  
+    <section class="booking-guidelines">
+        <div class="section-heading">
+            <p class="section-tag">
+                BEFORE YOU BOOK
+            </p>
+            <h2>
+                Booking Guidelines
+            </h2>
+        </div>
+        <div class="guidelines-container">
+            <div class="guideline">
+                <i class="fa-solid fa-clock"></i>
+                <h3>
+                    Arrive On Time
+                </h3>
+                <p>
+                    We recommend arriving on time so that you can
+                    enjoy your full dining experience.
+                </p>
+            </div>
+            <div class="guideline">
+                <i class="fa-solid fa-users"></i>
+                <h3>
+                    Group Bookings
+                </h3>
+                <p>
+                    Larger groups may require additional arrangements
+                    and advance confirmation.
+                </p>
+            </div>
+            <div class="guideline">
+                <i class="fa-solid fa-ban"></i>
+                <h3>
+                    Changes & Cancellations
+                </h3>
+                <p>
+                    If your plans change, please contact the restaurant
+                    as soon as possible.
+                </p>
+            </div>
+            <div class="guideline">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h3>
+                    Allergies
+                </h3>
+                <p>
+                    Please inform the team about serious allergies or
+                    dietary requirements before placing your order.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="booking-contact">
+        <div class="section-heading">
+            <p class="section-tag">
+                NEED HELP?
+            </p>
+            <h2>
+                Get In Touch
+            </h2>
+            <p>
+                If you have questions about your reservation, group
+                booking or special event, the Siga Culinary team
+                will be happy to assist you.
+            </p>
+        </div>
+        <div class="contact-cards">
+            <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>
+                    Visit Us
+                </h3>
+                <p>
+                    Alexandra, Johannesburg
+                </p>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>
+                    Call Us
+                </h3>
+                <p>
+                    Contact Siga Culinary directly for
+                    booking assistance.
+                </p>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>
+                    Email Us
+                </h3>
+                <p>
+                    Send us your booking or event enquiry.
+                </p>
+            </div>
+        </div>
+    </section>
+   
+    <section class="about-cta">
+        <div>
+            <p class="section-tag">
+                READY TO EXPERIENCE SIGA?
+            </p>
+            <h2>
+                Your Table Awaits
+            </h2>
+            <p>
+                Gather your friends, bring your family and come
+                experience the bold flavours and creative spirit
+                of Siga Culinary.
+            </p>
+            <a href="#booking-form" class="primary-btn">
+                Book Your Table Now
+            </a>
+        </div>
+    </section>
+   
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="images/happy customers.jpeg"
+                    alt="Siga Culinary Logo" height="300" width="300"
+                    class="footer-logo">
+                <p>
+                    Bringing together bold flavours, creativity and
+                    township culture through the unique Mexi-Kasi
+                    experience.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>
+                    Quick Links
+                </h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="news.html">News</a>
+            </div>
+            <div class="footer-column">
+                <h3>
+                    Find Us
+                </h3>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                   South Africa, Gauteng, Alexandra, Johannesburg
+                </p>
+                <p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.967186423759!2d28.11026!3d-26.0999898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d4d39a8c635%3A0xe48c45f996a213d!2sSiga%20Culinary%20Restaurant%20(Mexican%20Mexi-kasi%20style)!5e0!3m2!1sen!2sza!4v1788115302151!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </p>
+                
+            </div>
+            <div class="footer-column">
+                <h3>
+                    Follow Siga
+                </h3>
+                <div class="social-icons">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 Siga Culinary. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+        const bookingForm = document.getElementById("bookingForm");
+        const bookingMessage = document.getElementById("bookingMessage");
+        bookingForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            bookingMessage.innerHTML =
+                "Thank you, " + name +
+                "! Your booking request has been received. " +
+                "Siga Culinary will contact you to confirm your reservation.";
+            bookingMessage.style.display = "block";
+            bookingForm.reset();
+        });
+    </script>
+</body>
+</html>
